@@ -1,0 +1,10 @@
+<%= @post.name %><br>
+<%= @post.content %><br>
+<form method="GET" action="/posts/<%= @post.id %>/edit">
+	<input type="submit" value="edit">
+</form>
+<form method="POST" action="/posts">
+	<input id="hidden" type="hidden" name="_method" value="delete">
+	<input type="hidden" name="id" value=<%= @post.id %>>
+	<input type="submit" value="delete">
+</form>
