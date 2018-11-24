@@ -1,0 +1,7 @@
+<%# This is the index view. iterating over all post instances and
+displaying their name and content (the two attributes available in the class) %>
+
+<% @posts.each do |post| %>
+<%= post.name %>
+<%= post.content %>
+<% end %>
